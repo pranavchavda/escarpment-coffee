@@ -1,23 +1,22 @@
 ---
 title: Home
 sections:
-  - title: Reflex
-    img_path: images/pic01.jpg
-    content: |-
-      Lorem ipsum dolor sit magna consectetur  
-      adipiscing elit. Duis dapibus rutrum facilisis.  
-      Class aptent taciti sociosqu torquent.
+  - title: Escarpment Coffee
+    img_path: /uploads/esclogo.jpg
+    content: >-
+      Lorem ipsum dolor sit magna consectetur  adipiscing elit. Duis dapibus
+      rutrum facilisis.  Class aptent taciti sociosqu torquent.
     actions:
-      - label: Get Started
+      - label: Learn More
         url: /generic
         is_scrolly: false
         is_primary: false
     component: intro.html
     type: intro
   - title: Ipsum malesuada
-    subtitle: |-
-      Rutrum facilisis. Class aptent taciti sociosqu  
-      litora torquent et conubia etiam nostra.
+    subtitle: >-
+      Rutrum facilisis. Class aptent taciti sociosqu  litora torquent et conubia
+      etiam nostra.
     symbol_display:
       - title: Lorem
         icon: fa-code
@@ -44,9 +43,9 @@ sections:
     component: features.html
     type: features
   - title: Duis torquent
-    subtitle: |-
-      Rutrum facilisis. Class aptent taciti sociosqu  
-      litora torquent et conubia etiam nostra.
+    subtitle: >-
+      Rutrum facilisis. Class aptent taciti sociosqu  litora torquent et conubia
+      etiam nostra.
     content: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus
       rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per
@@ -62,10 +61,10 @@ sections:
     component: spotlight.html
     type: spotlight
   - title: Amet ullamcorper
-    content: |-
-      Aptent taciti sociosqu litora torquent et conubia sed etiam.  
-      Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam  
-      turpis mauris, ultricies erat malesuada quis.
+    content: >-
+      Aptent taciti sociosqu litora torquent et conubia sed etiam.  Phasellus
+      convallis elit id ullamcorper pulvinar. Duis aliquam  turpis mauris,
+      ultricies erat malesuada quis.
     actions:
       - label: Get Started
         url: /generic
@@ -79,3 +78,4 @@ menus:
     title: Home
 layout: home
 ---
+
