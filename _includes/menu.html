@@ -1,0 +1,20 @@
+<!-- Menu -->
+<nav id="menu">
+    <div class="inner">
+        <h2>Menu</h2>
+        <ul class="links">
+            {% for item in site.menus.main %}
+                <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+            {% endfor %}
+        </ul>
+        {% assign actions_is_not_empty = site.data.menu.actions | is_not_empty %}
+        {% if actions_is_not_empty %}
+            <ul class="actions stacked">
+                {% for action in site.data.menu.actions %}
+                    <li><a href="{% assign expr_1 = action.url | starts_with: '#' %}{% if expr_1 %}{{ action.url }}{% else %}{{ action.url | relative_url }}{% endif %}" class="button fit{% assign is_primary_is_not_empty = action.is_primary | is_not_empty %}{% if is_primary_is_not_empty %} primary{% endif %}{% assign is_scrolly_is_not_empty = action.is_scrolly | is_not_empty %}{% if is_scrolly_is_not_empty %} scrolly{% endif %}">{{ action.label }}</a></li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+    <a class="close" href="#menu">Close</a>
+</nav>

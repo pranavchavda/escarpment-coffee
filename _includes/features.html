@@ -1,0 +1,24 @@
+<!-- One -->
+<section class="wrapper style2 special">
+    <div class="inner">
+        <header>
+            <h2>{{ include.section.title }}</h2>
+            {{ include.section.subtitle | markdownify }}
+        </header>
+        <ul class="icons major style2">
+            {% for symbol in include.section.symbol_display %}
+            <li><span class="icon {{ symbol.icon }}"><span class="label">{{ symbol.title }}</span></span></li>{% endfor %}
+        </ul>
+        {{ include.section.content | markdownify }}
+        {% assign actions_is_not_empty = include.section.actions | is_not_empty %}
+        {% if actions_is_not_empty %}
+            <footer>
+                <ul class="actions special">
+                    {% for action in include.section.actions %}
+                        <li><a href="{% assign expr_1 = action.url | starts_with: '#' %}{% if expr_1 %}{{ action.url }}{% else %}{{ action.url | relative_url }}{% endif %}" class="button{% assign is_primary_is_not_empty = action.is_primary | is_not_empty %}{% if is_primary_is_not_empty %} primary{% endif %}{% assign is_scrolly_is_not_empty = action.is_scrolly | is_not_empty %}{% if is_scrolly_is_not_empty %} scrolly{% endif %}">{{ action.label }}</a></li>
+                    {% endfor %}
+                </ul>
+            </footer>
+        {% endif %}
+    </div>
+</section>
